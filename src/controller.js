@@ -17,7 +17,7 @@ class Controller extends Marionette.Object {
 	renderModel(view, id) {
 		React.render(
 			<MasterPage view = {view} formId = {id}/>,
-			document.body
+			document.getElementById('react-mount')
 		);
 	}
 
